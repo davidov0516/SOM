@@ -1,0 +1,135 @@
+stages:
+  - Test
+  - Build
+  - Deploy
+  - Run
+  - Monitor
+
+default:
+  tags:
+    - kjsRunner
+
+# Unit-Test-Job:
+#   stage: Test
+#   script:
+#     - export PATH=/usr/local/lib/nodejs/node-v18.18.0-linux-x64/bin:$PATH
+#     - cd backend
+#     - chmod +x node_modules/.bin/jest
+#     - npm run unit-test
+#     - cd ..
+
+# Code-Quality-Test-Job:
+#   stage: Test
+#   script:
+#     - sonar-scanner
+
+
+# Start-Server-Job:
+#   stage: Test
+#   script:
+#     - export PATH=/usr/local/lib/nodejs/node-v18.18.0-linux-x64/bin:$PATH
+#     - cd frontend
+#     - mv src/config.dev.js src/config.js
+#     - chmod +x node_modules/.bin/react-scripts
+#     - npm run build
+#     - cp -r build ../backend
+#     - cd ..
+#     - lsof -i :30000 && kill $(lsof -t -i :30000)
+#     - cd backend
+#     - mv dev.env .env
+#     - nohup node server.js > server.log 2>&1 &
+#     - sleep 5
+#   needs:
+#     # - job: Code-Quality-Test-Job
+#   artifacts:
+#     paths:
+#       - backend/build
+
+# Integration-Test-Job:
+#   stage: Test
+#   script:
+#     - export PATH=/usr/local/lib/nodejs/node-v18.18.0-linux-x64/bin:$PATH
+#     - cd backend
+#     - chmod +x node_modules/.bin/newman
+#     - npm run newman-test
+#     - cd ..
+#   needs:
+#     - job: Start-Server-Job
+#       artifacts: true
+
+# Selenium-Test-Job:
+#   stage: Test
+#   tags:
+#     - windowsRunner
+#   script:
+#     - cd backend
+#     - npm run selenium-test
+#     - cd ..
+#     - exit 0
+#   needs:
+#     - job: Integration-Test-Job
+#     - job: Start-Server-Job
+#       artifacts: true
+
+# Performance-Test-Job:
+#   stage: Test
+#   script:
+#     - export PATH=/usr/local/lib/nodejs/node-v18.18.0-linux-x64/bin:$PATH
+#     - cd backend
+#     - npm run performance-test
+#     - cd ..
+#     - lsof -i :30000 && kill $(lsof -t -i :30000)
+#   needs:
+#     - job: Selenium-Test-Job
+#     - job: Start-Server-Job
+#       artifacts: true
+
+# Build-Job:
+#   stage: Build
+#   script:
+#     - export PATH=/usr/local/lib/nodejs/node-v18.18.0-linux-x64/bin:$PATH
+#     - cd frontend
+#     - mv src/config.op.js src/config.js
+#     - chmod +x node_modules/.bin/react-scripts
+#     - npm run build
+#     - cp -r build ../backend
+#     - cd ..
+#     - cd backend
+#     - mv op.env .env
+#     - docker build --no-cache --network=none . -f Dockerfile -t slack-clone:$NEW_TAG
+#     - docker save -o slack-clone-$NEW_TAG.tar slack-clone:$NEW_TAG
+#     - docker rmi slack-clone:$NEW_TAG
+#     - jf rt upload slack-clone-$NEW_TAG.tar slack-clone
+#     - cd ..
+
+# Init-Cluster-Job:
+#   stage: Deploy
+#   script:
+#     - mkdir download
+#     - cd download
+#     - jf rt download slack-clone/slack-clone-1.0.0.tar
+#     - jf rt download slack-clone/cluster.yml
+#     - jf rt download slack-clone/deployment.yml
+#     - jf rt download slack-clone/service.yml
+#     - docker load -i slack-clone-1.0.0.tar
+#     - kind delete cluster
+#     - kind create cluster --image kindest/node:v1.27.3 --config=cluster.yml
+#     - kind load docker-image slack-clone:1.0.0
+#     - kubectl apply -f deployment.yml
+#     - kubectl apply -f service.yml
+#     - cd ..
+#   rules:
+#     - if: '$INIT_CLUSTER == "yes"'
+
+# Deploy-Job:
+#   stage: Deploy
+#   script:
+#     - mkdir download
+#     - cd download
+#     - jf rt download slack-clone/slack-clone-$NEW_TAG.tar
+#     - docker load -i slack-clone-$NEW_TAG.tar
+#     - kind load docker-image slack-clone:$NEW_TAG
+#     - kubectl set image deployment.v1.apps/slack-clone-deployment slack-clone=slack-clone:$NEW_TAG
+#     - cd ..
+#   rules:
+#     - if: '$INIT_CLUSTER == "no"'

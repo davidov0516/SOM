@@ -1,0 +1,650 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shipping</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/shipping.css" />
+    <link rel="stylesheet" type="text/css" href="css/color.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+    <header class="app-header bg-dark">
+        <div class="app-header-logo">
+            <img class="app-header-logo-image" src="./resource/main/u36.svg">
+            <div class="app-header-logo-title"> Business Name </div>
+        </div>
+        <div class="app-header-right-menu">
+            <div class="app-header-alarm" >
+                <img class="app-header-alarm-image" src="./resource/main/u30.svg">
+            </div>
+            <img class="app-header-right-divider" src="./resource/main/u27.svg">
+            <div class="app-header-user-info">  
+                <img class="app-header-avatar" src="../resource/main/u25.svg">
+                <div class="app-header-user-name">
+                    User name
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-pane">
+        <aside class="app-aside-bar bg-dark">
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">DASHBOARD</h2>
+                <a class="no-underline" href="./dashboard.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Dashboard
+                    </button>
+                </a>
+            </div>
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SHIPPING</h2>
+                <a class="no-underline" href="./index.html">
+                    <button class="app-aside-bar-button" onclick="onShippingClicked()">
+                        <span class=" menu-icon"></span>
+                        Shipping
+                    </button>
+                </a>
+                <a class="no-underline" href="./waterareas.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Water areas
+                    </button>
+                </a>
+                <a class="no-underline" href="./charterers.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Charterers
+                    </button>
+                </a>
+                <a class="no-underline" href="./certificates.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Certificates
+                    </button>
+                </a>
+            </div>
+            
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SETTING</h2>
+                <a class="no-underline" href="./ship.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Ship
+                    </button>
+                </a>
+                <a class="no-underline" href="./mariners.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Mariner
+                    </button>
+                </a>
+                <a class="no-underline" href="./type_certificate.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Type of Certificate
+                    </button>
+                </a>
+
+
+            </div>
+        </aside> 
+        <section class="section">
+            <div class="section-header">
+                <div class="section-box-small shadow">
+                    <span></span>
+                </div>
+                <div class="section-header-content">
+                    <div class="section-header-title">
+                        Fuel    
+                    </div>
+                    <div class="section-header-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-table">
+                <div class="section-main-content-button-panel" style="padding: 20px;">
+                    <button class="section-main-content-button border-radius-right" style="height: 40px; font-size: 20px; text-decoration: none; ">
+                        S_Number
+                    </button>
+                    <button class="section-main-content-button border-radius-left" style="height: 40px; font-size: 20px">
+                        Ship name 01
+                    </button>
+                    <button class="yellow-button" style="margin-left: auto;">Edit</button>
+                </div>
+            </div>
+
+            <div class="shpping-detail-table" style="display: flex;">
+                <div class="main-table-body" style="padding-left: 1.25rem; flex-basis: 45%;">
+                    <table class="data-table"> 
+                        <thead>
+                            <th style="width: 45%;">Item</th>
+                            <th style="width: 55%;">Value</th>
+                            
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td>BL</td>
+                                <td>BL-XXX-809830458E7</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Charterer</td>
+                                <td>ABC.Corp</td>
+                            </tr><tr class="odd">
+                                <td>Period</td>
+                                <td>2023/5/1 ~  2023/7/3</td>
+                            </tr><tr class="odd">
+                                <td>Sailling days</td>
+                                <td>22</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div style="flex-basis: 45% ;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean euismod bibendum laoreet. Proin gravida dolor sit amet 
+                        lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. 
+                        Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                        Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+                         sed rhoncus pronin sapien nunc accuan eget.
+                    </p>
+                    <img src="./resource/shipping_detail/u391.png" style=" width: 200px; float: right;">
+                </div>
+            </div>
+
+            <div class="button-tab">
+                <button class="blue-button" name="ship">Navigation</button>
+                <button class="blue-button" name="personal">Cost</button>
+                <button class="blue-button" name="personal">Fuel</button>
+
+            </div>
+            
+
+            <!-- Navigation tab -->
+            <div class="main-table">
+                <div class="main-table-row">
+                    <div class="tab-panel">
+                        <p class="card-title"><span>Navigation</span></p>
+                        
+                        <!-- ********************  Departure ********************** -->
+                        <!-- ===============  Heading 1 ============== -->
+                        <div class="icon-with-text heading1">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u231.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u247.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u265.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Departure</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading1">
+                            <p> Departure: 2023/7/1 15:00 <br> Pass: 2023/7/3 10:30 </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 01</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/1 15:00 ~ 2023/7/2 20:00           2 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+                        <!-- ===============  Heading 3 ============== -->
+                        <div class="icon-with-text heading3">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u249.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Load</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading3">
+                            <p> Port: Port name <br>
+                                Arrived: 2023/7/1 15:00 <br>
+                                Weight: 2000(t) <br>
+                                Check: 2023/7/2 12:30 <br>
+                                Period: 2023/7/1 16:30 ~ 2023/7/2 12:00 </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u265.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 02</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/2 20:00 ~ 2023/7/3 10:30           1 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+
+                        <!-- ********************  Navigation ********************** -->
+                        <!-- ===============  Heading 1 ============== -->
+                        <div class="icon-with-text heading1">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u231.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u268.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u306.svg" style="height: fit-content;">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Navigation</span></p>
+                            </div>
+
+                        </div>
+
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 03</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/3 10:30 ~ 2023/7/6 21:15           3 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+                        <!-- ===============  Heading 3 ============== -->
+                        <div class="icon-with-text heading3">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u249.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Unload</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading3">
+                            <p> Port: Port name <br>
+                                Arrived: 2023/7/5 21:20 <br>
+                                Weight: 2000(t) <br>
+                                Check: 2023/7/2 12:30 <br>
+                                Period: 2023/7/5 22:00 ~ 2023/7/6 12:00 </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u265.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 04</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/6 21:15 ~ 2023/7/9 10:30           3 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 05</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/1 15:00 ~ 2023/7/2 20:00           2 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                        <!-- ===============  Heading 3 ============== -->
+                        <div class="icon-with-text heading3">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u249.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Load</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading3">
+                            <p> Port: Port name <br>
+                                Arrived: 2023/7/5 21:20 <br>
+                                Weight: 2000(t) <br>
+                                Check: 2023/7/2 12:30 <br>
+                                Period: 2023/7/5 22:00 ~ 2023/7/6 12:00 </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 04</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/1 15:00 ~ 2023/7/2 20:00           2 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 03</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/1 15:00 ~ 2023/7/2 20:00           2 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+                        <!-- ********************  Arrived  ********************** -->
+                        <!-- ===============  Heading 1 ============== -->
+                        <div class="icon-with-text heading1">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u231.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u268.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Arrived</span></p>
+                            </div>
+
+                        </div>
+
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 02</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/3 10:30 ~ 2023/7/6 21:15           3 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+                        <!-- ===============  Heading 2 ============== -->
+                        <div class="icon-with-text heading2">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u234.svg">
+                                <img class="main-image-icon" src="resource/shipping_detail/u246.svg">
+                            </div>
+                            <div class="icon-tail">
+                                <img src="resource/shipping_detail/u245.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Area name 01</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading2">
+                            <p> 2023/7/3 10:30 ~ 2023/7/6 21:15           3 days </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+
+                        <!-- ===============  Heading 3 ============== -->
+                        <div class="icon-with-text heading3">
+                            <div class="two-image-icon">
+                                <img class="bg-image-icon" src="resource/shipping_detail/u249.svg">
+                            </div>
+                            <div class="icon-label">
+                                <p><span>Load</span></p>
+                            </div>
+
+                        </div>
+                        <div class="navi-content heading3">
+                            <p> Port: Port name <br>
+                                Arrived: 2023/7/5 21:20 <br>
+                                Weight: 2000(t) <br>
+                                Check: 2023/7/2 12:30 <br>
+                                Period: 2023/7/5 22:00 ~ 2023/7/6 12:00 </p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Cost tab -->
+
+
+            <div class="main-table">
+                <div class="main-table-row">
+                    <p>Cost</p>
+                </div>
+                <div class="main-table-row" style="padding-left: 3rem; display: block;">
+                    <p style="font-size: 16px;">Shipping fee: 5000 USD</p>
+                    <p style="font-size: 16px;">Deposit:  7000 USD</p>
+                    <p style="font-size: 16px;">Daily wages:  100 USD</p>
+                    <p style="font-size: 16px;">Additional fee:   1000 USD</p>
+                    <div class="main-table-row">
+                        <p class="hyphen" style="display: block;"><span></span></p>
+                        <p style="font-size: 20px; padding-left: 5px; padding-top: 4px;"><b>Crew fees</b></p>
+                        <div style="display: block; padding-left: 25px;">
+                            <p style="font-size: 16px;">Total: 6800 USD</p>
+                            <p style="font-size: 16px;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                 Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. 
+                                 Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, 
+                                 nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, 
+                                 felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                        </div>
+
+                        <div class="main-table-body" style="padding-left: 25px; flex-basis: 90%;">
+                            <table class="data-table"> 
+                                <thead>
+                                    <th style="width: 10%;">No</th>
+                                    <th style="width: 18%;">Job</th>
+                                    <th style="width: 18%;">Name</th>
+                                    <th style="width: 18%;">Daily fee</th>
+                                    <th style="width: 18%;">Days</th>
+                                    <th style="width: 18%;">Amount</th>
+                                    
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>Captain</td>
+                                        <td>David</td>
+                                        <td>100</td>
+                                        <td>20</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>2</td>
+                                        <td>Mariner</td>
+                                        <td>David</td>
+                                        <td>100</td>
+                                        <td>20</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>Captain</td>
+                                        <td>David</td>
+                                        <td>100</td>
+                                        <td>20</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>Captain</td>
+                                        <td>David</td>
+                                        <td>100</td>
+                                        <td>20</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="main-table-row">
+                        <p class="hyphen" style="display: block;">
+                            <span></span>
+                        </p>
+                        <p style="font-size: 20px; padding-left: 5px; padding-top: 4px;"><b>Other</b></p>
+                        <div style="padding-left: 25px; display: block;">
+                            <p style="font-size: 16px;">Total: 6800 USD</p>
+                            <p style="font-size: 16px;">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                                 Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. 
+                                 Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, 
+                                 nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, 
+                                 felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
+                        </div>
+
+                        <div class="main-table-body" style="padding-left: 25px; flex-basis: 90%;">
+                            <table class="data-table"> 
+                                <thead>
+                                    <th style="width: 10%;">No</th>
+                                    <th style="width: 18%;">Item</th>
+                                    <th style="width: 18%;">Price</th>
+                                    <th style="width: 18%;">From</th>
+                                    <th style="width: 18%;">To</th>
+                                    <th style="width: 18%;">Amount</th>
+                                    
+                                </thead>
+                                <tbody>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>Item 01</td>
+                                        <td>100</td>
+                                        <td>2023/7/1</td>
+                                        <td>2023/8/30</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    <tr class="odd">
+                                        <td>1</td>
+                                        <td>Item 01</td>
+                                        <td>100</td>
+                                        <td>2023/7/1</td>
+                                        <td>2023/8/30</td>
+                                        <td>2000</td>
+                                    </tr><tr class="odd">
+                                        <td>1</td>
+                                        <td>Item 01</td>
+                                        <td>100</td>
+                                        <td>2023/7/1</td>
+                                        <td>2023/8/30</td>
+                                        <td>2000</td>
+                                    </tr><tr class="odd">
+                                        <td>1</td>
+                                        <td>Item 01</td>
+                                        <td>100</td>
+                                        <td>2023/7/1</td>
+                                        <td>2023/8/30</td>
+                                        <td>2000</td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <!-- Fuel tab -->
+            <div class="main-table">
+                <div class="main-table-row">
+                    <p>Fuel Consumption</p>
+                </div>
+                <div class="main-table-row" style="padding-left: 3rem; display: block;">
+                    <p style="font-size: 16px;">Total: 3500 kg</p>
+                    <p style="font-size: 16px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean euismod bibendum laoreet. Proin gravida dolor sit amet 
+                        lacus accumsan et viverra justo commodo. Proin sodales pulvinar 
+                        sic tempor. Sociis natoque penatibus et magnis dis parturient 
+                        montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra 
+                        vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p><br>
+                    <p style="font-size: 16px;">Added fuel:    xxxx kg</p>
+                    <p style="font-size: 16px;">Consumption before departure:  xxx kg</p>
+                    <p style="font-size: 16px;">Inventory when arrived:   xxx kg</p>
+                </div>
+                
+                
+            </div>
+            <div class="footer-bar">
+                <p>Company name & contact</p>
+            </div>
+            
+            
+            
+        </section>
+    </section>
+</body>
+
+</html>

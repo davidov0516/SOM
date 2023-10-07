@@ -1,0 +1,287 @@
+
+.section-header {
+    height: 120px;
+    width: 100%;
+    background-color: rgba(247, 249, 250, 1);
+    display: flex;
+    align-items: center;
+}
+
+.section-box-small {    
+    margin-left: 40px;
+    border-width: 0px;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header-content {
+    width: 628px;   
+    margin-left: 40px;
+}
+
+.section-header-description {
+    align-self: flex-start;
+    padding: 0px 0px 0px 0px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;    
+    color: #BFC3C5;
+}
+
+.section-header-title {
+    font-size: 36px;
+    color: #B9CF25;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.section-main-content {
+    background-color: #f1f4f6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-main-button-group {
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+
+
+.section-main-button {
+    width: 140px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 5px;   
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.section-main-button:active {
+    background-color: rgb(185 207 37);
+}
+
+.section-main-button:hover {
+    background-color: rgb(185 207 37);
+}
+
+.section-main-card-group {
+    margin-left: 40px;
+    left: 304px;
+    top: 255px;
+    /* height: 650px; */
+    /* width: 1020px; */
+    width:95%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-main-card {    
+    border-width: 0px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.section-main-content-button-group {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+
+.section-main-content-button {
+    height: 24px;
+    width: 200px;
+    border-width: 0px;
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #F2F2F2;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.section-main-content-small-button {
+    width: 20px;
+    height: 20px;
+    padding-left: 1px;
+    background-color: rgba(127, 127, 127, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(121, 121, 121, 1);
+    border-radius: 2px;   
+}
+
+.section-main-content-small-button:hover {
+    background-color: rgb(185 207 37);
+}
+
+.section-main-content-button-panel {
+    display: flex;
+}
+
+
+.section-main-content-inform-group {
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 12px;
+}   
+
+.section-main-content-inform-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-main-card-bottom {
+    display: flex;
+    border-width: 0px;
+    height: 60px; 
+  
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgba(247, 249, 250, 1);
+
+}   
+
+.create-ship-group {
+    padding: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Style the tab */
+.tab {
+    height: fit-content;
+    border: 1px solid #ccc;
+    /* background-color: #f1f1f1; */
+    border-width: 0px;
+    margin-top: 20px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    margin-right: 5px;
+    background-color: inherit;
+    width: 120px;
+    height:40px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #3f6ad8;
+    color: rgb(242, 242, 242);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #3f6ad8;
+    color:rgb(242, 242, 242);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 6px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-width:0px
+  }
+
+.edit-shipping-main{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.sub-tab {
+    overflow: hidden;
+    width: fit-content;
+    margin-left:20px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .sub-tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .sub-tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .sub-tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .sub-tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-width:0px;
+    width:100%
+  }

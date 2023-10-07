@@ -1,0 +1,291 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shipping</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/shipping.css" />
+    <link rel="stylesheet" type="text/css" href="css/color.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+    <header class="app-header bg-dark">
+        <div class="app-header-logo">
+            <img class="app-header-logo-image" src="./resource/main/u36.svg">
+            <div class="app-header-logo-title"> Business Name </div>
+        </div>
+        <div class="app-header-right-menu">
+            <div class="app-header-alarm" >
+                <img class="app-header-alarm-image" src="./resource/main/u30.svg">
+            </div>
+            <img class="app-header-right-divider" src="./resource/main/u27.svg">
+            <div class="app-header-user-info">  
+                <img class="app-header-avatar" src="../resource/main/u25.svg">
+                <div class="app-header-user-name">
+                    User name
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-pane">
+        <aside class="app-aside-bar bg-dark">
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">DASHBOARD</h2>
+                <a class="no-underline" href="./dashboard.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Dashboard
+                    </button>
+                </a>
+            </div>
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SHIPPING</h2>
+                <a class="no-underline" href="./index.html">
+                    <button class="app-aside-bar-button" onclick="onShippingClicked()">
+                        <span class=" menu-icon"></span>
+                        Shipping
+                    </button>
+                </a>
+                <a class="no-underline" href="./waterareas.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Water areas
+                    </button>
+                </a>
+                <a class="no-underline" href="./charterers.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Charterers
+                    </button>
+                </a>
+                <a class="no-underline" href="./certificates.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Certificates
+                    </button>
+                </a>
+            </div>
+            
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SETTING</h2>
+                <a class="no-underline" href="./ship.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Ship
+                    </button>
+                </a>
+                <a class="no-underline" href="./mariners.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Mariner
+                    </button>
+                </a>
+                <a class="no-underline" href="./type_certificate.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Type of Certificate
+                    </button>
+                </a>
+
+
+            </div>
+        </aside>  
+        <section class="section">
+            <div class="section-header">
+                <div class="section-box-small shadow">
+                    <span></span>
+                </div>
+                <div class="section-header-content">
+                    <div class="section-header-title">
+                        MARINERS
+                    </div>
+                    <div class="section-header-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-table">
+                <div class="main-table-row">
+                    <p>MARINERS</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p class="plus-button">+</p>
+                </div>
+                <div class="main-table-row">
+                    <div class="main-table-row-input-department">
+                        <label for="Name">Name</label>
+                        <input type="text" id="Name">
+                    </div>
+                    <div class="main-table-row-input-department">
+                        <label for="Ship">Ship</label>
+                        <select id="Ship">
+                            <option selected>All</option>
+                            <option>department 01</option>
+                            <option>department 02</option>
+                            <option>department 03</option>
+                        </select>
+                    </div>
+                    
+                    <div class="main-table-row-input-department" style="margin-top: auto;">
+                        <button class="blue-button" name="Search">Search</button>
+                    </div>
+
+                    <div class="main-table-row-input-entries">
+                        <label style="padding-top: 3px;">Show</label>
+                        <select style="margin-left: 10px; height: 28px; width: 60px;">
+                            <option selected>10</option>
+                            <option>30</option>
+                            <option>50</option>
+                            <option>100</option>
+                        </select>
+                        <label style="margin-left: 10px; padding-top: 3px;">entries</label>
+                    </div>
+
+                </div>
+
+                <div class="main-table-body">
+                    <table class="data-table"> 
+                        <thead>
+                            <th style="width: 5%;">#</th>
+                            <th style="width: 24%;">Name</th>
+                            <th style="width: 24%;">Ship</th>
+                            <th style="width: 24%;">Duty (Job)</th>
+                            <th style="width: 24%;">Certificate (Expire)</th>
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td>1</td>
+                                <td>
+                                    <div class="mariner-photo">
+                                        <img src="./resource/mariners/mariner_photo.svg" alt="mariner photo">
+                                        <p>David</p>
+                                    </div>
+                                </td>
+                                <td>CMA CGM TROCADERO</td>
+                                <td>Captine (Captine)</td>
+                                <td>
+                                    <div class="table-button-group">
+                                        <div style="display: inline;">
+                                            K-00234987 (2025/6/9)
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
+                                            </span>
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-edit-button.png" alt="edit button">
+                                            </span>
+                                        </div>
+                                    </div>                                                                       
+                                </td>
+                            </tr>
+                            <tr class="odd">
+                                <td>1</td>
+                                <td>
+                                    <div class="mariner-photo">
+                                        <img src="./resource/mariners/mariner_photo.svg" alt="mariner photo">
+                                        <p>David</p>
+                                    </div>
+                                </td>
+                                <td>CMA CGM TROCADERO</td>
+                                <td>Captine (Captine)</td>
+                                <td>
+                                    <div class="table-button-group">
+                                        <div style="display: inline;">
+                                            K-00234987 (2025/6/9)
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
+                                            </span>
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-edit-button.png" alt="edit button">
+                                            </span>
+                                        </div>
+                                    </div>                                                                       
+                                </td>
+                            </tr><tr class="odd">
+                                <td>1</td>
+                                <td>
+                                    <div class="mariner-photo">
+                                        <img src="./resource/mariners/mariner_photo.svg" alt="mariner photo">
+                                        <p>David</p>
+                                    </div>
+                                </td>
+                                <td>CMA CGM TROCADERO</td>
+                                <td>Captine (Captine)</td>
+                                <td>
+                                    <div class="table-button-group">
+                                        <div style="display: inline;">
+                                            K-00234987 (2025/6/9)
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
+                                            </span>
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-edit-button.png" alt="edit button">
+                                            </span>
+                                        </div>
+                                    </div>                                                                       
+                                </td>
+                            </tr><tr class="odd">
+                                <td>1</td>
+                                <td>
+                                    <div class="mariner-photo">
+                                        <img src="./resource/mariners/mariner_photo.svg" alt="mariner photo">
+                                        <p>David</p>
+                                    </div>
+                                </td>
+                                <td>CMA CGM TROCADERO</td>
+                                <td>Captine (Captine)</td>
+                                <td>
+                                    <div class="table-button-group">
+                                        <div style="display: inline;">
+                                            K-00234987 (2025/6/9)
+                                        </div>
+                                        <div style="margin-left: auto;">
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
+                                            </span>
+                                            <span class="cell-edit-remove">
+                                                <img src="./resource/water_areas/water-area-edit-button.png" alt="edit button">
+                                            </span>
+                                        </div>
+                                    </div>                                                                       
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="main-table-row">
+                    <div class="main-table-row-pagination">
+                        <a href="#">Previous</a>
+                        <a href="#">1</a>
+                        <a href="#" class="active">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">Next</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bar">
+                <p>Company name & contact</p>
+            </div>
+            
+            
+            
+        </section>
+    </section>
+</body>
+
+</html>

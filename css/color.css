@@ -1,0 +1,80 @@
+
+.bg-primary {
+    background-color: #3f6ad8!important
+}
+
+a.bg-primary:hover,a.bg-primary:focus,button.bg-primary:hover,button.bg-primary:focus {
+    background-color: #2651be!important
+}
+
+.bg-secondary {
+    background-color: #6c757d!important
+}
+
+a.bg-secondary:hover,a.bg-secondary:focus,button.bg-secondary:hover,button.bg-secondary:focus {
+    background-color: #545b62!important
+}
+
+.bg-success {
+    background-color: #3ac47d!important
+}
+
+a.bg-success:hover,a.bg-success:focus,button.bg-success:hover,button.bg-success:focus {
+    background-color: #2e9d64!important
+}
+
+.bg-info {
+    background-color: #16aaff!important
+}
+
+a.bg-info:hover,a.bg-info:focus,button.bg-info:hover,button.bg-info:focus {
+    background-color: #0090e2!important
+}
+
+.bg-warning {
+    background-color: #f7b924!important
+}
+
+a.bg-warning:hover,a.bg-warning:focus,button.bg-warning:hover,button.bg-warning:focus {
+    background-color: #e0a008!important
+}
+
+.bg-danger {
+    background-color: #d92550!important
+}
+
+a.bg-danger:hover,a.bg-danger:focus,button.bg-danger:hover,button.bg-danger:focus {
+    background-color: #ad1e40!important
+}
+
+.bg-light {
+    background-color: #eee!important
+}
+
+a.bg-light:hover,a.bg-light:focus,button.bg-light:hover,button.bg-light:focus {
+    background-color: #d5d5d5!important
+}
+
+.bg-dark {
+    background-color: #343a40!important
+}
+
+a.bg-dark:hover,a.bg-dark:focus,button.bg-dark:hover,button.bg-dark:focus {
+    background-color: #1d2124!important
+}
+
+.bg-focus {
+    background-color: #444054!important
+}
+
+a.bg-focus:hover,a.bg-focus:focus,button.bg-focus:hover,button.bg-focus:focus {
+    background-color: #2d2a37!important
+}
+
+.bg-alternate {
+    background-color: #794c8a!important
+}
+
+a.bg-alternate:hover,a.bg-alternate:focus,button.bg-alternate:hover,button.bg-alternate:focus {
+    background-color: #5c3a69!important
+}

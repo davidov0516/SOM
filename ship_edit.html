@@ -1,0 +1,251 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shipping</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/shipping.css" />
+    <link rel="stylesheet" type="text/css" href="css/color.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/water.css" />
+    <link rel="stylesheet" type="text/css" href="css/charterers.css" />
+    
+</head>
+
+<body>
+    <header class="app-header bg-dark">
+        <div class="app-header-logo">
+            <img class="app-header-logo-image" src="./resource/main/u36.svg">
+            <div class="app-header-logo-title"> Business Name </div>
+        </div>
+        <div class="app-header-right-menu">
+            <div class="app-header-alarm" >
+                <img class="app-header-alarm-image" src="./resource/main/u30.svg">
+            </div>
+            <img class="app-header-right-divider" src="./resource/main/u27.svg">
+            <div class="app-header-user-info">  
+                <img class="app-header-avatar" src="../resource/main/u25.svg">
+                <div class="app-header-user-name">
+                    User name
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-pane">
+        <aside class="app-aside-bar bg-dark">
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">DASHBOARD</h2>
+                <a class="no-underline" href="./dashboard.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Dashboard
+                    </button>
+                </a>
+            </div>
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SHIPPING</h2>
+                <a class="no-underline" href="./index.html">
+                    <button class="app-aside-bar-button" onclick="onShippingClicked()">
+                        <span class=" menu-icon"></span>
+                        Shipping
+                    </button>
+                </a>
+                <a class="no-underline" href="./waterareas.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Water areas
+                    </button>
+                </a>
+                <a class="no-underline" href="./charterers.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Charterers
+                    </button>
+                </a>
+                <a class="no-underline" href="./certificates.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Certificates
+                    </button>
+                </a>
+            </div>
+            
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SETTING</h2>
+                <a class="no-underline" href="./ship.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Ship
+                    </button>
+                </a>
+                <a class="no-underline" href="./mariners.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Mariner
+                    </button>
+                </a>
+                <a class="no-underline" href="./type_certificate.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Type of Certificate
+                    </button>
+                </a>
+
+
+            </div>
+        </aside> 
+        <section class="section" id="section">
+            <div class="section-header">
+                <div class="section-box-small shadow">
+                    <span></span>
+                </div>
+                <div class="section-header-content">
+                    <div class="section-header-title">
+                        EDIT SHIP
+                    </div>
+                    <div class="section-header-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
+                </div>
+            </div>
+            <div class="section-main-content">
+                <div class="section-main-card-group" style="width: 95%;">
+                    <div>
+                        <div class="ship-infos" style="margin-bottom: 10px;">
+                            <div class="ship-info-tile" style="margin-left: 0px;">
+                                <div>
+                                    <p class="label"><span>Vessel name</span></p>
+                                    <input type="text" value="CMA CGM TROCADERO" class="input" style="width: 300px;">
+                                </div>
+                            </div>
+                            <div class="ship-info-tile">
+                                <div>
+                                    <p class="label"><span>Registered</span></p>
+                                    <input type="date" value="" style="width: 150px;">
+                                </div>
+                            </div>
+                            <div class="ship-info-tile">
+                                <div>
+                                    <p class="label" style="display: flex;"><input type="checkbox" value="Removed" style="height: 17px;margin: 0px;"> &nbsp;&nbsp;<span>Removed</span> </p>
+                                    
+                                    <input type="date" value="" style="width: 150px;">
+                                </div>
+                            </div>
+                            <button class="section-main-button" style="margin-left: auto;">
+                                Save
+                            </button>
+                            <button class="section-main-button" style="margin-left: 20px;">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+
+                    <p class="label"><span>Photos</span></p>
+                    <div class="ship-images">
+                        <div class="ship-big-image">
+                            <img style="width: 100%" class="img " src="resource/ship_detail/u1113.png">
+                        </div>
+                        &nbsp;
+                        <div class="ship-small-images">
+                            <div class="ship-small-image-tile">
+                                <img style="width: 100%" src="resource/ships/photo_thumbnail_u1071.svg">
+                            </div>
+                            <div class="ship-small-image-tile">
+                                <img style="width: 100%" src="resource/ships/photo_thumbnail_u1071.svg">
+                            </div>
+                            <div class="ship-small-image-tile">
+                                <img style="width: 100%" src="resource/ships/photo_thumbnail_u1071.svg">
+                            </div>
+                            <div class="ship-small-image-tile">
+                                <img style="width: 100%" src="resource/ships/photo_thumbnail_u1071.svg">
+                            </div>
+                            <div class="ship-small-image-tile">
+                                <img style="width: 100%" src="resource/ship_detail/photo_add_u1108.svg">
+                                <p class="child-center"><span style="font-size: 32px; color: #D7D7D7;">+</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="section-main-card shadow" style="text-align: left; height: auto !important;">
+                        <p class="card-title"><span>VESSEL PARTICULARS</span></p>
+                        <div class="vessel-infos">
+                            <div class="vessel-info-tile" style="flex-basis: 100%;">
+                                <p class="label"><span>Ship type</span></p>
+                                <input type="text" value="Container Ship">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Year of Build</span></p>
+                                <input type="text" value="2021">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Flag</span></p>
+                                <input type="text" value="France">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Homeport</span></p>
+                                <input type="text" value="">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Reg. Number</span></p>
+                                <input type="text" value="987654321">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Callsign</span></p>
+                                <input type="text" value="FMOL">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>IMO Number</span></p>
+                                <input type="text" value="987654321">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Gross Tonnage (t))span></p>
+                                <input type="text" value="236583">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Net Tonnage (t)</span></p>
+                                <input type="text" value="">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Deadweight</span></p>
+                                <input type="text" value="220666">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Length (m)</span></p>
+                                <input type="text" value="400">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Beam (m)</span></p>
+                                <input type="text" value="61">
+                            </div>
+                            <div class="vessel-info-tile">
+                                <p class="label"><span>Depth</span></p>
+                                <input type="text" value="9839167">
+                            </div>
+                            <div class="vessel-info-tile" style="flex-basis: 100%;">
+                                <p class="label"><span>Draugth (m)</span></p>
+                                <input type="text" value="236583">
+                            </div>
+                            <div class="vessel-info-tile" style="flex-basis: 100%;">
+                                <p class="label"><span>Note</span></p>
+                                <textarea style="color: rgb(153, 153, 153); width: 100%; height: 180px;"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-main-card-bottom" style="margin-bottom: 0px;">
+                <span class="normal-font" style="margin-left: 40px;">
+                    Company name & contact
+                </span>
+            </div>
+        </section>
+    </div>
+    
+</body>
+
+</html>

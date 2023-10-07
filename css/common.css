@@ -1,0 +1,709 @@
+.shadow {
+    background: inherit;
+    background-color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 3px;
+    -moz-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.105882352941176);
+    -webkit-box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.105882352941176);
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.105882352941176);
+    font-family: 'Material Icons Outlined', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+}
+
+.arial {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+.border-radius-left {
+    border-radius: 3px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: rgba(127, 127, 127, 1);   
+}
+
+.border-radius-right {
+    color: #000000;
+    border-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgba(129, 211, 248, 1);
+}
+
+.border-radius-right:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* shipping detail */
+.icon-with-text {
+    display: flex;
+}
+
+.heading1 {
+    margin-left: 60px;
+}
+
+.heading2 {
+    margin-left: 90px;
+}
+
+.heading3 {
+    margin-left: 120px;
+}
+
+.two-image-icon {
+    position: relative;
+    /* background-image: url('image1.jpg'); */
+}
+
+.bg-image-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-image-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-tail {
+    position: absolute;
+    transform: translate(0, 55px);
+}
+
+.icon-label {
+    margin-left: 30px;
+}
+
+.navi-content {
+    position: relative;
+}
+.navi-content p {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px !important;
+    letter-spacing: normal;
+    color: #333333;
+    margin-left: 30px;
+    margin-top:0px;
+}
+
+
+.icon-with-text .icon-label p{
+    font-family: 'Arial Bold', 'Arial', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+/* ############################################## KJS0703 ############################################## */
+
+.plus-button {
+    background-color: rgba(0, 33, 71, 1);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    border-width: 0px;
+  }
+
+
+/* ############################################## KCH0120 ############################################## */
+
+input, textarea {
+    /* width: 300px; */
+    height: 40px;
+    padding: 2px 2px 2px 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #6F6F6F;
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: 1px solid gray;
+    outline: 0px;
+    box-shadow: none;
+}
+
+input:focus, textarea:focus {
+    border-radius: 0px !important;
+    border-color: #47aafc;
+    border-width: 1px;
+    outline:0px;
+}
+
+input[type="date" i] {
+    font-family: monospace;
+    padding-inline-start: 1px;
+    cursor: default;
+    align-items: center;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 0px;
+    color: rgb(153, 153, 153);
+}
+
+.ship-infos {
+    display: flex;
+    align-items: flex-end;
+}
+.ship-info-tile {
+    margin:0px 20px;
+}
+
+.ship-info-tile p {
+    margin-top: 30px;
+}
+
+
+
+.label {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #333333;
+    vertical-align: none;
+    text-align: left;
+    line-height: normal;
+    text-transform: none;
+}
+
+.ship-images {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.ship-big-image {
+    width: 66%;
+}
+
+.ship-small-images {
+    width: 33%;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ship-small-image-tile {
+    width: 31%;
+    margin: 3px;
+    position: relative;
+}
+
+.child-center {
+    position: inherit;
+    /* top: 50%;
+    left: 50%; */
+    transform: translate(40%, -180%);
+}
+
+p.card-title {
+    text-align: left;
+    padding: 30px 2px 2px 30px;
+    margin-top: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+}
+
+.vessel-infos {
+    margin: 45px;
+    display: flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.vessel-info-tile {
+    margin: 0px 0px 0px 20px;
+}
+
+.vessel-info-tile input {
+    width: 290px;
+}
+
+.dashboard-panel-group {
+    display: flex;
+    flex-flow: row wrap;
+}
+.dashboard-panel {
+    position: relative;
+    border: 1px solid black;
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+}
+.dashboard-panel p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+/* ############################################## RJI0227 ############################################## */
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.main-contents {
+    background-color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.title-bar {
+    /* background-color: rgba(255,255,255,.45); */
+    background-color: rgba(247, 249, 250, 1);
+    padding: 30px;
+    margin: 0, -30px -30px 30px;
+    position: relative;
+}
+  
+.title-bar-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+  
+.title-bar-wrapper-icon {
+    /* align-items: center; */
+    font-size: 2rem;
+    padding: 0.8rem;
+    margin: 0 30px 0 0;
+    background: #ffffff;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.title-bar-wrapper-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #333333;
+    vertical-align: none;
+    text-align: left;
+    line-height: normal;
+    text-transform: none;
+}
+  
+.title-bar-wrapper-title span {
+    font-size: 30px;
+    color: #B9CF25;
+}
+  
+  
+.main-table {
+    margin-top: 1.25rem;
+    margin-left: 1.25rem;
+    margin-bottom: 2.25rem;
+    width: 95%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.main-table-row {
+    padding-left: 1.25rem;
+    padding-right: 2.25rem;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+  
+.main-table-row p {
+    /* color: #B9CF25; */
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;
+}
+  
+.main-table-row p.plus-button {
+    background-color: rgba(0, 33, 71, 1);
+    color: #FFFFFF;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+  
+}
+
+.fvessel-infos {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+}
+  
+
+.main-table-row-input-company {
+    margin-left: 20px;
+}
+.main-table-row-input-company input ,select {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin-top: 5px;
+    border:1px solid gray;
+}
+
+button.blue-button {
+    font-size: 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+    /* margin-top: 23px; */
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+    border:1px solid #B9CF25;
+}
+
+button.blue-button:hover:not(.active) {
+    font-size: 16px;
+    background-color: rgba(63, 106, 216, 1); 
+    border: 0px;
+    color: #ffffff;
+    transition-delay: 0.5s;
+    transition: all 0.3s ease;
+}
+
+button.blue-button:active {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(63, 106, 216, 1); 
+    border: 0px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+button.yellow-button {
+    font-size: 16px;
+    cursor: pointer;
+    color: #ffffff;
+    height: 40px;
+    width: 140px;
+    background-color: rgba(185, 207, 37, 1);
+    border-radius: 5px;
+    border: 0;
+}
+button.yellow-button:hover:not(.active) {
+    font-size: 16px;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    border: 1px solid rgba(185, 207, 37, 1);
+    color: #2c2c2c;
+    transition-delay: 0.5s;
+    transition: all 0.3s ease;
+}
+
+.main-table-row-input-entries {
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-self: center;
+}
+
+select {
+    height: 40px;
+    width: 50px;
+}
+
+.main-table-row-pagination {
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.main-table-row-pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+.main-table-row-pagination a.active {
+    background-color: #1061db;
+    color: white;
+    border: 1px solid #1061db;
+}
+
+.main-table-row-pagination a:hover:not(.active) {background-color: #ddd;}
+
+.main-table-body {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    padding-bottom: 1.25rem;
+    background-color: rgba(255,255,255,.45);
+}
+  
+  table.data-table {
+    clear: both;
+    margin-top: 0.75rem!important;
+    margin-bottom: 0.75rem!important;
+    max-width: none!important;
+    width: 100%;
+    border-width: 1px;
+}
+  
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    text-align: left;
+    height: 40px;
+    background-color: rgba(0, 33, 71, 1);
+    color: #FFFFFF;
+}
+  
+th {
+    padding-left: 10px;
+}
+  
+tbody {
+    display: table-body-group;
+    vertical-align: middle;
+}
+  
+tr {
+    height: 50px;
+}
+  
+  /* tr:nth-of-type(odd) {
+    background-color: rgba(0, 255, 0, .25);
+} */
+  
+tr:nth-of-type(even) {
+    background-color: rgba(0, 0, 0, .1);
+}
+  
+td {
+    padding-left: 10px;
+}
+  
+td span{
+    padding-right: 10px;
+    float: right;
+}
+  
+.footer-bar {
+    background-color: rgba(250, 251, 252, 1);
+    height: 60px;
+}
+  
+.footer-bar p{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+
+
+/* for certificates_ship.html */
+
+.button-tab {
+    margin-top: 10px;
+    margin-left: 1.25rem;
+}
+
+.button-tab button {
+    border: 0px;
+}
+
+.main-table-row-input-department {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+}
+
+.main-table-row-input-department select {
+    margin-top: 5px;
+    width: 200px;
+}
+
+.main-table-row-input-department button {
+    height: 40px;
+}
+
+.table-button-group {
+    display: flex;
+    align-items: center;
+}
+
+
+/* for certificates_personal.html */
+
+.main-table-row-input-department input {
+    margin-top: 5px;
+}
+
+/* for type_certificates_ship.html */
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* for mariner.html */
+
+.mariner-photo {
+    display: flex;
+}
+
+.mariner-photo p {
+    margin-left: 15px;
+}
+
+
+/* for ship.html */
+
+.vessel {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.vessel p {
+    margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* for mariner_detail.html */
+
+.mariner-info {
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+.mariner-info-right {
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.mariner-info-right p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.mariner-info-right-detail p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #a7a7a7;
+}
+
+
+/* for shipping_detail.html */
+
+p.hyphen {
+    /* border-width: 0px;
+    position: absolute;
+    left: 62px;
+    top: 564px;
+    width: 24px;
+    height: 24px;
+    display: flex; */
+    font-family: 'Material Icons Outlined', sans-serif;
+    /* font-weight: 400;
+    font-style: normal;
+    color: #002147; */
+}
+    
+
+/* for waterarea.html*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgb(47, 79, 79,0.608); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 450px;
+    height: 354px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-title {
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #333333;
+  }
+  
+  .modal-input-area {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    color: #333333;
+  }
+  

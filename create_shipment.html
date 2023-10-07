@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shipping</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/shipping.css" />
+    <link rel="stylesheet" type="text/css" href="css/color.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/water.css" />
+    <link rel="stylesheet" type="text/css" href="css/charterers.css" />
+
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const activeButton = document.querySelector('#MainButton');
+        const activeSubButton = document.querySelector("#SubButton");
+        activeButton.classList.add('active');
+        activeSubButton.classList.add('active');
+        document.getElementById("Main").style.display = "block";
+        document.getElementById("01").style.display = "block";
+        document.getElementById("cost-01").style.display = "block";
+    });
+</script>
+
+<body>
+    <header class="app-header bg-dark">
+        <div class="app-header-logo">
+            <img class="app-header-logo-image" src="./resource/main/u36.svg">
+            <div class="app-header-logo-title"> Business Name </div>
+        </div>
+        <div class="app-header-right-menu">
+            <div class="app-header-alarm">
+                <img class="app-header-alarm-image" src="./resource/main/u30.svg">
+            </div>
+            <img class="app-header-right-divider" src="./resource/main/u27.svg">
+            <div class="app-header-user-info">
+                <img class="app-header-avatar" src="../resource/main/u25.svg">
+                <div class="app-header-user-name">
+                    User name
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-pane">
+        <aside class="app-aside-bar bg-dark">
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">DASHBOARD</h2>
+                <a class="no-underline" href="./dashboard.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Dashboard
+                    </button>
+                </a>
+            </div>
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SHIPPING</h2>
+                <a class="no-underline" href="./index.html">
+                    <button class="app-aside-bar-button" onclick="onShippingClicked()">
+                        <span class=" menu-icon"></span>
+                        Shipping
+                    </button>
+                </a>
+                <a class="no-underline" href="./waterareas.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Water areas
+                    </button>
+                </a>
+                <a class="no-underline" href="./charterers.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Charterers
+                    </button>
+                </a>
+                <a class="no-underline" href="./certificates.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Certificates
+                    </button>
+                </a>
+            </div>
+            
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SETTING</h2>
+                <a class="no-underline" href="./ship.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Ship
+                    </button>
+                </a>
+                <a class="no-underline" href="./mariners.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Mariner
+                    </button>
+                </a>
+                <a class="no-underline" href="./type_certificate.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Type of Certificate
+                    </button>
+                </a>
+
+
+            </div>
+        </aside> 
+        <section class="section" id="section">
+            <div class="section-header">
+                <div class="section-box-small shadow">
+                    <span></span>
+                </div>
+                <div class="section-header-content">
+                    <div class="section-header-title">
+                        EDIT SHIPMENT
+                    </div>
+                    <div class="section-header-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
+                </div>
+            </div>
+            <div class="section-main-content">
+                <div class="section-main-card-group" style="width: 100%;">
+                    <div class="create-ship-group shadow" style="width: 750px; height: 50px; margin-top: 30px;">
+                        <button class="section-main-content-button border-radius-right" style="height: 40px; ">
+                            S-Number
+                        </button>
+                        <button class="section-main-content-button border-radius-left" style="height: 40px">
+                            Ship Name
+                        </button>
+                        <button class="section-main-button" style="margin-left: auto;">
+                            Save
+                        </button>
+                        <a class="no-underline" href="./create_shipment.html">
+                            <button class="section-main-button" style="margin-left: 10px;">
+                                Finish
+                            </button>
+                        </a>
+                    </div>
+                    <div class="tab">
+                        <button class="tablinks" id="MainButton" onclick="openTab(event, 'Main')">Main</button>
+                        <button class="tablinks" onclick="openTab(event, 'Departure')">Departure</button>
+                        <button class="tablinks" onclick="openTab(event, 'Navigation')">Navigation</button>
+                        <button class="tablinks" onclick="openTab(event, 'Arrived')">Arrived</button>
+                        <button class="tablinks" onclick="openTab(event, 'Cost')">Cost</button>
+                        <button class="tablinks" onclick="openTab(event, 'Fuel')">Fuel</button>
+                    </div>
+
+                    <div id="Main" class="tabcontent">
+                        <div class="section-main-card shadow" style="margin-top: 10px;width: 760px; height: 600px;">
+                            <div class="modal-title"
+                                style="font-size: 24px; text-align: start; margin-left: 26px;margin-top: 30px;">
+                                Main Information
+                            </div>
+                            <div class="edit-shipping-main">
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>S-Number</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Ship</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Charterer</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>B/L</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Port</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Cargo</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Note</span></p>
+                                            <input type="text" class="input" style="width: 620px;height: 150px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-main-card-bottom shadow" style="border-right: 0px;">
+                            <span class="normal-font" style="margin-left: 40px;">
+                                Company name & contact
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="Departure" class="tabcontent">
+                        <div class="section-main-card shadow" style="margin-top: 10px;width: 760px; height: auto;">
+                            <div class="modal-title"
+                                style="font-size: 24px; text-align: start; margin-left: 26px;margin-top: 30px;">
+                                Departure
+                            </div>
+                            <div class="edit-shipping-main">
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Departure</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 5px;">
+                                            <div>
+                                                <p class="label"><span>Pass</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top: 30px; align-items: center;margin-right: 30px;">
+                                    <span></span>
+                                    <div class="sub-tab">
+                                        <button class="sub-tablinks" id="SubButton" onclick="openSubtab(event, '01')">Area name 01</button>
+                                        <button class="sub-tablinks" onclick="openSubtab(event, '01')">Area name 02</button>
+                                        <button class="sub-tablinks" onclick="openSubtab(event, '01')">Area name 03</button>
+                                    </div>
+                                    <button class="plus-button" style="margin-left: auto;" id="myBtn">+</button>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile"
+                                            style="margin-left: 0px; display: flex;flex-direction: row;">
+                                            <div>
+                                                <p class="label"><span>Areaname </span></p>
+                                                <input type="text" value="" style="width: 300px;">
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: auto; margin-left: auto;">
+                                            <button class="section-main-button" style="width: 80px;">
+                                                +Load
+                                            </button>
+                                            <button class="section-main-button">
+                                                +Unload
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>In</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 5px;">
+                                            <div>
+                                                <p class="label"><span>Out</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Note</span></p>
+                                            <input type="text" class="input" style="width: 620px;height: 150px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Port</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Arrived</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Period</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 5px;">
+                                            <div>
+                                                <p class="label"><span>&nbsp</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Note</span></p>
+                                            <input type="text" class="input" style="width: 620px;height: 150px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-main-card-bottom shadow" style="border-right: 0px;">
+                            <span class="normal-font" style="margin-left: 40px;">
+                                Company name & contact
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="Navigation" class="tabcontent">
+                        <div class="section-main-card shadow" style="margin-top: 10px;width: 760px; height: auto;">
+                            <div class="modal-title"
+                                style="font-size: 24px; text-align: start; margin-left: 26px;margin-top: 30px;">
+                                Navigation
+                            </div>
+                            <div style="display: flex; margin-top: 20px; align-items: center;margin-left: 30px;margin-right: 30px;">
+                                <span></span>
+                                <div class="sub-tab">
+                                    <button class="sub-tablinks" id="SubButton" onclick="openSubtab(event, '01')">Area name 01</button>
+                                    <button class="sub-tablinks" onclick="openSubtab(event, '01')">Area name 02</button>
+                                    <button class="sub-tablinks" onclick="openSubtab(event, '01')">Area name 03</button>
+                                </div>
+                                <button class="plus-button" style="margin-left: auto;" id="myBtn">+</button>
+                            </div>
+
+                            <div id="01" class="sub-tabcontent">
+                                <div class="edit-shipping-main">
+                                    <div style="display: flex;">
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 0px;">
+                                                <div>
+                                                    <p class="label"><span>Departure</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 5px;">
+                                                <div>
+                                                    <p class="label"><span>Pass</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile"
+                                                style="margin-left: 0px; display: flex;flex-direction: row;">
+                                                <div>
+                                                    <p class="label"><span>Areaname </span></p>
+                                                    <input type="text" value="" style="width: 300px;">
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: auto; margin-left: auto;">
+                                                <button class="section-main-button" style="width: 80px;">
+                                                    +Load
+                                                </button>
+                                                <button class="section-main-button">
+                                                    +Unload
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 0px;">
+                                                <div>
+                                                    <p class="label"><span>In</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 5px;">
+                                                <div>
+                                                    <p class="label"><span>Out</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Note</span></p>
+                                                <input type="text" class="input" style="width: 620px;height: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Port</span></p>
+                                                <input type="text" class="input" style="width: 300px;">
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 0px;">
+                                                <div>
+                                                    <p class="label"><span>Arrived</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 0px;">
+                                                <div>
+                                                    <p class="label"><span>Period</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div class="ship-info-tile" style="margin-left: 5px;">
+                                                <div>
+                                                    <p class="label"><span>&nbsp</span></p>
+                                                    <input type="date" value="" style="width: 150px;">
+                                                    <input type="time" value="" style="width: 150px;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Note</span></p>
+                                                <input type="text" class="input" style="width: 620px;height: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-main-card-bottom shadow" style="border-right: 0px;">
+                            <span class="normal-font" style="margin-left: 40px;">
+                                Company name & contact
+                            </span>
+                        </div>
+                    </div>
+                    <div id="Arrived" class="tabcontent">
+                        <div class="section-main-card shadow" style="margin-top: 10px;width: 760px; height: auto;">
+                            <div class="modal-title"
+                                style="font-size: 24px; text-align: start; margin-left: 26px;margin-top: 30px;">
+                                Arrived
+                            </div>
+                            <div class="edit-shipping-main">
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Arrived</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 5px;">
+                                            <div>
+                                                <p class="label"><span>Pass</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div style="display: flex; margin-top: 30px; align-items: center;margin-right: 30px;">
+                                    <span></span>
+                                    <div class="sub-tab">
+                                        <button class="sub-tablinks" id="SubButton" onclick="openSubtab(event, '01')">Area name 01</button>
+                                        <button class="sub-tablinks" onclick="openSubtab(event, '01')">Area name 02</button>
+                                        <button class="sub-tablinks" onclick="openSubtab(event, '01')">Area name 03</button>
+                                    </div>
+                                    <button class="plus-button" style="margin-left: auto;" id="myBtn">+</button>
+                                </div>
+    
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile"
+                                            style="margin-left: 0px; display: flex;flex-direction: row;">
+                                            <div>
+                                                <p class="label"><span>Area Name </span></p>
+                                                <input type="text" value="" style="width: 300px;">
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: auto; margin-left: auto;">
+                                            <button class="section-main-button" style="width: 80px;">
+                                                +Load
+                                            </button>
+                                            <button class="section-main-button">
+                                                +Unload
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>In</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 5px;">
+                                            <div>
+                                                <p class="label"><span>Out</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Note</span></p>
+                                            <input type="text" class="input" style="width: 620px;height: 150px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Port</span></p>
+                                            <input type="text" class="input" style="width: 300px;">
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Arrived</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Period</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 5px;">
+                                            <div>
+                                                <p class="label"><span>&nbsp</span></p>
+                                                <input type="date" value="" style="width: 150px;">
+                                                <input type="time" value="" style="width: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Note</span></p>
+                                            <input type="text" class="input" style="width: 620px;height: 150px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-main-card-bottom shadow" style="border-right: 0px;">
+                            <span class="normal-font" style="margin-left: 40px;">
+                                Company name & contact
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="Cost" class="tabcontent">
+                        <div class="section-main-card shadow" style="margin-top: 10px;width: 760px; height: auto;">
+                            <div class="modal-title"
+                                style="font-size: 24px; text-align: start; margin-left: 26px;margin-top: 30px;">
+                                Cost
+                            </div>
+                            <div class="edit-shipping-main">
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                            <div style="display: flex;">
+                                                <div style="display: flex; flex-direction:column; margin-right: 20px">
+                                                    <p class="label"><span>Shipping fee</span></p>
+                                                    <input type="time" value="" style="width: 130px;">
+                                                </div>
+                                                <div style="display: flex; flex-direction:column; margin-right: 20px;">
+                                                    <p class="label"><span>Deposit</span></p>
+                                                    <input type="date" value="" style="width: 130px;">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                            <div style="display: flex;">
+                                                <div style="display: flex; flex-direction:column; margin-right: 20px">
+                                                    <p class="label"><span>Daily wages</span></p>
+                                                    <input type="time" value="" style="width: 130px;">
+                                                </div>
+                                                <div style="display: flex; flex-direction:column;">
+                                                    <p class="label"><span>Additional fee</span></p>
+                                                    <input type="date" value="" style="width: 130px;">
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex; margin-top: 30px; align-items: center;margin-right: 30px;">
+                                    <span></span>
+                                    <div class="sub-tab">
+                                        <button class="sub-tablinks" id="SubButton" onclick="openSubtab(event, 'cost-01')">Crew fees</button>
+                                        <button class="sub-tablinks" onclick="openSubtab(event, 'cost-02')">Other</button>
+                                    </div>
+                                    <button class="plus-button" style="margin-left: auto;" id="myBtn">+</button>
+                                </div>
+                                <div id="cost-01" class="sub-tabcontent">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Note</span></p>
+                                                <input type="text" class="input" style="width: 620px;height: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="cost-02" class="sub-tabcontent">
+                                    <div style="display: flex;">
+                                        <div class="ship-info-tile" style="margin-left: 0px;">
+                                            <div>
+                                                <p class="label"><span>Note</span></p>
+                                                <input type="text" class="input" style="width: 620px;height: 150px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-main-card-bottom shadow" style="border-right: 0px;">
+                            <span class="normal-font" style="margin-left: 40px;">
+                                Company name & contact
+                            </span>
+                        </div>
+                        
+                    </div>
+
+                    <div id="Fuel" class="tabcontent">
+                        <div class="section-main-card shadow" style="margin-top: 10px;width: 760px; height: auto;">
+                            <div class="modal-title"
+                                style="font-size: 24px; text-align: start; margin-left: 26px;margin-top: 30px;">
+                                Fuel Consumption
+                            </div>
+                            <div class="edit-shipping-main">
+                                <div style="display: flex;">
+                                    <div style="display: flex;">
+                                            <div style="display: flex;">
+                                                <div style="display: flex; flex-direction:column; margin-right: 20px">
+                                                    <p class="label"><span>Inventory</span></p>
+                                                    <input type="time" value="" style="width: 130px;">
+                                                </div>
+                                                <div style="display: flex; flex-direction:column; margin-right: 20px;">
+                                                    <p class="label"><span>added fuel</span></p>
+                                                    <input type="date" value="" style="width: 130px;">
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div style="display: flex;">
+                                            <div style="display: flex;">
+                                                <div style="display: flex; flex-direction:column; margin-right: 20px">
+                                                    <p class="label"><span>Consumption before departure</span></p>
+                                                    <input type="time" value="" style="width: 130px;">
+                                                </div>
+                                                <div style="display: flex; flex-direction:column;">
+                                                    <p class="label"><span>Inventory when arrived</span></p>
+                                                    <input type="date" value="" style="width: 130px;">
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div style="display: flex;">
+                                    <div class="ship-info-tile" style="margin-left: 0px;">
+                                        <div>
+                                            <p class="label"><span>Note</span></p>
+                                            <input type="text" class="input" style="width: 620px;height: 150px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-main-card-bottom shadow" style="border-right: 0px;">
+                            <span class="normal-font" style="margin-left: 40px;">
+                                Company name & contact
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <script>
+            function openTab(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            function openSubtab(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("sub-tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("sub-tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>

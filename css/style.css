@@ -1,0 +1,186 @@
+@import "color.css";
+
+body {
+    margin: 0px;
+    display: flex;
+}
+
+.app-header {
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index:50;
+}
+
+.main-pane {
+    display: flex;
+    width: 100%;
+}
+
+.app-header-logo {
+    width: 280px;
+    align-items: center;
+    display: flex;
+    height: 60px;   
+    background-color: rgba(72, 78, 83, 1);
+}
+
+.app-header-alarm {
+    margin-right: 25px;
+    margin-left: 20px;
+    width: 44px;    
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../resource/main/u29.svg")
+}
+
+.app-header-alarm-image {
+    width: 18px;
+    height: 20px;   
+}
+
+.app-header-avatar {
+    margin-left: 25px;
+    border-width: 0px;
+    width: 40px;    
+    height: 40px;
+}
+
+.app-header-right-menu {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-header-logo-image {
+    margin-left: 10px;
+    width: 42px;
+    height: 42px;
+} 
+
+.app-header-user-info {
+    display: flex;
+    align-items: center;
+    
+}
+
+.app-header-user-name {
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    color: #F2F2F2;
+}
+
+.app-header-right-divider {
+    width: 2px;
+    height: 31px;
+}
+
+.app-header-logo-title {
+    margin-left: 10px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px; 
+    color: #FFFFFF;;
+} 
+
+.app-aside-bar {
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 60px;
+}
+
+.app-aside-bar-button {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    width: 100%;
+    background-color: inherit;
+    transition: background-color 0.7s;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #a9abae;
+    border-color: transparent;
+}
+  
+.app-aside-bar-button:hover {
+   background-color: rgb(83 88 93);
+   color: #FFFFFF;
+}
+
+.app-aside-bar-header {
+    font-family: 'Arial Bold', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ADAFB2;
+}
+
+.app-aside-bar-pane {
+    left: 24px;
+    top: 5px;
+    width: 232px;
+    height: fit-content;
+    background: inherit;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.section {
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: 280px;
+}
+
+.menu-icon {
+    font-family: 'Material Icons Outlined', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 26px;
+    color: #7C7F83;
+    text-align: center;
+    margin-right: 15px;
+}
+.menu-small-icon {
+    font-family: 'Wingdings', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.normal-font {
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.no-underline {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
