@@ -10,40 +10,24 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/color.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/water.css" />
+    <link rel="stylesheet" type="text/css" href="css/charterers.css" /> -->
 </head>
 
 <body>
     <div id="myModal" class="modal">
-        <div class="modal-content" style="width: 28%; height: 44%;">
+        <div class="modal-content">
             <span class="close">&times;</span>
             <div class="modal-title" style="font-size: 26px;">
-                CHARTERER
+                WATER AREA
             </div>
             <div class="modal-input-area" style="height: 80%;">
-                <div style="display: flex;">
-                    <div>
-                        <span> Company </span>
-                        <input style=" width: 100%;height: 70%; margin-top: 10px;">
-                    </div>
-                    <div style="margin-left: 20px;">
-                        <span> Nation </span>
-                        <input style=" width: 100%;height: 70%; margin-top: 10px;">
-                    </div>  
-                </div>
-                <div style="display: flex; margin-top: 30px;">
-                    <div>
-                        <span> Contact </span>
-                        <input style=" width: 80%;height: 70%; margin-top: 10px;" placeholder="phone">
-                    </div>
-                    <div>
-                        <span>&nbsp;</span> 
-                        <input style=" width: 120%;height: 70%; margin-top: 10px;" placeholder="email">
-                    </div>  
-                </div>
+                <span> Name </span>
+                <input style=" width: 100%;height: 12%; margin-top: 10px;">
                 <span style="margin-top: 30px;"> Note </span>
                 <input style=" width: 100%;height: 30%; margin-top: 10px;">
-                <div class="display:flex;" style="margin-top: 30px;width: 100%; height:20%;margin-left: 90px;">
-                    <button class="blue-button">OK</button>
+                <div class="display:flex;" style="margin-top: 30px;width: 100%; height:20%;margin-left: 70px;">
+                    <button class="blue-button" >OK</button>
                     <button class="blue-button">Cancel</button>
                 </div>
             </div>
@@ -77,12 +61,11 @@
                         Dashboard
                     </button>
                 </a>
-
             </div>
             <div class="app-aside-bar-pane">
                 <h2 class="app-aside-bar-header">SHIPPING</h2>
                 <a class="no-underline" href="./shipping.html">
-                    <button class="app-aside-bar-button" >
+                    <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Shipping
                     </button>
@@ -106,7 +89,7 @@
                     </button>
                 </a>
             </div>
-
+            
             <div class="app-aside-bar-pane">
                 <h2 class="app-aside-bar-header">SETTING</h2>
                 <a class="no-underline" href="./ships.html">
@@ -130,16 +113,15 @@
 
 
             </div>
-        </aside>
-
+        </aside> 
         <section class="section">
             <div class="section-header">
                 <div class="section-box-small shadow">
-                    <span></span>
+                    <span></span>
                 </div>
                 <div class="section-header-content">
                     <div class="section-header-title">
-                        CHARTERERS
+                        WATER AREAS
                     </div>
                     <div class="section-header-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
@@ -149,48 +131,35 @@
             </div>
             <div class="main-table">
                 <div class="main-table-row">
-                    <p>CHARTERERS</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <p>WATER AREAS</p>&nbsp;&nbsp;&nbsp;&nbsp;
                     <p class="plus-button" id="myBtn">+</p>
-                </div>
-                <div class="main-table-row">
-                    <div class="main-table-row-input-company">
-                        <label for="Company">Company</label>
-                        <input type="text" id="Company">
-                    </div>
-                    <div class="main-table-row-input-company">
-                        <label for="Nation">Nation</label>
-                        <input type="text" id="Nation">
-                    </div>
-                    <div class="main-table-row-input-company" style="margin-top: auto; ">
-                        <button name="Search" class="blue-button">Search</button>
-                    </div>
-                    <div class="main-table-row-input-entries">
-                        <label style="padding-top: 3px;">Show</label>
-                        <select style="margin-left: 10px; height: 28px; width: 60px;">
-                            <option selected>10</option>
-                            <option>30</option>
-                            <option>50</option>
-                            <option>100</option>
-                        </select>
-                        <label style="margin-left: 10px; padding-top: 3px;">entries</label>
-                    </div>
                 </div>
                 <div class="main-table-body">
                     <table class="data-table">
                         <thead>
-                            <th style="width: 30px;">#</th>
-                            <th style="width: 80px;">Company</th>
-                            <th style="width: 150px;">Nation</th>
-                            <th style="width: 150px;">Phone</th>
-                            <th style="width: 150px;">Email</th>
+                            <th class="sorting_asc" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                style="width: 20px;" aria-sort="ascending"
+                                aria-label="Name: activate to sort column descending"><strong>#</strong></th>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                style="width: 100px;" aria-label="Position: activate to sort column ascending">Name</th>
+                            <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1"
+                                style="width: 300px;" aria-label="Office: activate to sort column ascending">Note</th>
                         </thead>
                         <tbody>
                             <tr class="odd">
                                 <td>1</td>
-                                <td>Company 01</td>
-                                <td>Certificate name 01</td>
-                                <td>1234567890</td>
-                                <td>example@mail.com
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
                                     <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
                                     <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
 
@@ -198,10 +167,19 @@
                             </tr>
                             <tr class="odd">
                                 <td>1</td>
-                                <td>Company 01</td>
-                                <td>Certificate name 01</td>
-                                <td>1234567890</td>
-                                <td>example@mail.com
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
                                     <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
                                     <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
 
@@ -209,32 +187,79 @@
                             </tr>
                             <tr class="odd">
                                 <td>1</td>
-                                <td>Company 01</td>
-                                <td>Certificate name 01</td>
-                                <td>1234567890</td>
-                                <td>example@mail.com
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
                                     <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
                                     <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
 
                                 </td>
                             </tr>
-                            <tr class="odd">
+                            <tr class="even">
                                 <td>1</td>
-                                <td>Company 01</td>
-                                <td>Certificate name 01</td>
-                                <td>1234567890</td>
-                                <td>example@mail.com
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
                                     <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
                                     <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
 
                                 </td>
                             </tr>
-                            <tr class="odd">
+                            <tr class="even">
                                 <td>1</td>
-                                <td>Company 01</td>
-                                <td>Certificate name 01</td>
-                                <td>1234567890</td>
-                                <td>example@mail.com
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
+                                    <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
+                                    <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                </td>
+                            </tr>
+                            <tr class="even">
+                                <td>1</td>
+                                <td>Water area 01</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum
+                                    laoreet.
                                     <button class="section-main-content-small-button-remove menu-small-icon-remove" style="margin-right: 10px; float: right;">r</button>
                                     <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
 
@@ -245,35 +270,25 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="main-table-row">
-                    <div class="main-table-row-pagination">
-                        <a href="#">Previous</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">Next</a>
-                    </div>
-                </div>
             </div>
-            <div class="footer-bar">
-                <p>Company name & contact</p>
+            <div class="section-main-card-bottom shadow">
+                <span class="normal-font" style="margin-left: 40px;">
+                    Company name & contact
+                </span>
             </div>
 
             <script>
                 // Get the modal
-                var modal = document.getElementById("myModal");
+                var modal = document.getElementById("myModal"); 
 
                 // Get the button that opens the modal
                 var btn = document.getElementById("myBtn");
 
                 // Get the <span> element that closes the modal
                 var span = document.getElementsByClassName("close")[0];
-                btn.addEventListener('click', showModal);
+                btn.addEventListener('click',showModal);
                 // When the user clicks the button, open the modal 
-                function showModal() {
+                function showModal(){
                     modal.style.display = "block";
                 }
 

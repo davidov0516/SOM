@@ -1,0 +1,337 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Shipping</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/color.css" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+</head>
+
+<body>
+    <header class="app-header bg-dark">
+        <div class="app-header-logo">
+            <img class="app-header-logo-image" src="./resource/main/u36.svg">
+            <div class="app-header-logo-title"> Business Name </div>
+        </div>
+        <div class="app-header-right-menu">
+            <div class="app-header-alarm" >
+                <img class="app-header-alarm-image" src="./resource/main/u30.svg">
+            </div>
+            <img class="app-header-right-divider" src="./resource/main/u27.svg">
+            <div class="app-header-user-info">  
+                <img class="app-header-avatar" src="../resource/main/u25.svg">
+                <div class="app-header-user-name">
+                    User name
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-pane">
+        <aside class="app-aside-bar bg-dark">
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">DASHBOARD</h2>
+                <a class="no-underline" href="./dashboard.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Dashboard
+                    </button>
+                </a>
+            </div>
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SHIPPING</h2>
+                <a class="no-underline" href="./shipping.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Shipping
+                    </button>
+                </a>
+                <a class="no-underline" href="./water_areas.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Water areas
+                    </button>
+                </a>
+                <a class="no-underline" href="./charterers.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Charterers
+                    </button>
+                </a>
+                <a class="no-underline" href="./certificates.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Certificates
+                    </button>
+                </a>
+            </div>
+            
+            <div class="app-aside-bar-pane">
+                <h2 class="app-aside-bar-header">SETTING</h2>
+                <a class="no-underline" href="./ships.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Ship
+                    </button>
+                </a>
+                <a class="no-underline" href="./mariners.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Mariner
+                    </button>
+                </a>
+                <a class="no-underline" href="./type_certificate.html">
+                    <button class="app-aside-bar-button">
+                        <span class=" menu-icon"></span>
+                        Type of Certificate
+                    </button>
+                </a>
+
+
+            </div>
+        </aside> 
+        <section class="section">
+            <div class="section-header">
+                <div class="section-box-small shadow">
+                    <span></span>
+                </div>
+                <div class="section-header-content">
+                    <div class="section-header-title">
+                        PERSONAL CARD
+                    </div>
+                    <div class="section-header-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-table">
+                <div class="section-main-content-button-panel" style="padding: 20px;">
+                    <button class="section-main-content-button border-radius-right" style="height: 40px;color: #ffffff; font-size: 20px; text-decoration: none; background-color: rgba(0, 191, 191, 1);">
+                        Certificate Name
+                    </button>
+                    <button class="section-main-content-button border-radius-left" style="height: 40px; font-size: 20px">
+                        Ship name 01
+                    </button>
+                    <button id="issue_button" class="yellow-button" style="margin-left: auto; display: none;" onclick="viewDetail_2()">Issue</button>
+                </div>
+            </div>
+
+            <div class="main-table" id="issue_first" style="width: 50%;">
+                <div class="main-table-row">
+                    <p>ISSUE</p>
+                </div>
+                <div class="main-table-row"  style="margin-bottom: 30px;">
+                    <div class="main-table-row-input-company">
+                        <label for="Putin">Put in</label>
+                        <input type="date" id="Putin">
+                    </div>
+                    <div class="main-table-row-input-company">
+                        <label for="Department">Department</label>
+                        <select class="Department" style="width: 190px;"></select>
+                    </div>
+                    <div class="main-table-row-input-company" style="margin-top: auto; margin-left: 50px;">
+                        <button id="Putin_button" class="blue-button" onclick="viewDetail()">Put in</button>
+                    </div>
+                    
+                    
+                </div>
+                <div id="issue_second" style="display: none;">
+                    <div class="main-table-row" style="padding-top: 30px; border-top: 1px solid rgb(220,220,220);">
+                        <div class="main-table-row-input-company">
+                            <label for="ID">ID</label>
+                            <input type="text" id="ID">
+                        </div>
+                        <div class="main-table-row-input-company">
+                            <label for="Issue">Issue</label>
+                            <input type="date" id="Issue">
+                        </div>
+                        <div class="main-table-row-input-company">
+                            <label for="Expire">Expire</label>
+                            <input type="date" id="Expire">
+                        </div>
+                    </div>
+                    <div class="main-table-row" style="padding-top: 20px; margin-bottom: 30px;">
+                        <div class="main-table-row-input-company">
+                            <label for="Account">Account</label>
+                            <input type="text" id="Account">
+                        </div>
+                        <div class="main-table-row-input-company">
+                            <label for="Price">Price</label>
+                            <input type="text" id="Price">
+                        </div>
+                        <div class="main-table-row-input-company">
+                            <label for="Registration fee">Registration fee</label>
+                            <input type="text" id="Registration fee">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="shpping-detail-table" style="display: flex;">
+                <div class="main-table-body" id="issue_third" style="padding-left: 1.25rem; flex-basis: 45%; display: none;">
+                    <table class="data-table"> 
+                        <thead>
+                            <th style="width: 45%;">Item</th>
+                            <th style="width: 55%;">Value</th>
+                            
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td>Ship</td>
+                                <td>Shipname 01, Captine</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Department</td>
+                                <td>Department 02</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>ID</td>
+                                <td>K-093453</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Issue Date</td>
+                                <td>2023/5/1</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Expiration Date</td>
+                                <td>2023/9/3</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Account</td>
+                                <td>BANK-435989734987345</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Price</td>
+                                <td>150</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Registration fee</td>
+                                <td>50</td>
+                            </tr>
+                            <tr class="odd">
+                                <td>Amount</td>
+                                <td>200</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div id="issue_sixth" class="main-table"  style="width: 50%;">
+                    <div id="issue_fourth" style="display: none;">
+                        <div class="main-table-row">
+                            <p>ISSUE</p>
+                        </div>
+                        <div class="main-table-row"  style="margin-bottom: 30px;">
+                            <div class="main-table-row-input-company">
+                                <label for="Putin">Put in</label>
+                                <input type="date" id="Putin">
+                            </div>
+                            <div class="main-table-row-input-company">
+                                <label for="Department">Department</label>
+                                <select class="Department" style="width: 190px;"></select>
+                            </div>
+                            <div class="main-table-row-input-company" style="margin-top: auto; margin-left: 50px;">
+                                <button id="Putin_button2" name="Putin" class="blue-button" onclick="viewDetail_3()">Put in</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div id="issue_fifth" style="display: none;">
+                        <div class="main-table-row" style="padding-top: 30px; border-top: 1px solid rgb(220,220,220);">
+                            <div class="main-table-row-input-company">
+                                <label for="ID">ID</label>
+                                <input type="text" id="ID">
+                            </div>
+                            <div class="main-table-row-input-company">
+                                <label for="Issue">Issue</label>
+                                <input type="date" id="Issue">
+                            </div>
+                            <div class="main-table-row-input-company">
+                                <label for="Expire">Expire</label>
+                                <input type="date" id="Expire">
+                            </div>
+                        </div>
+                        <div class="main-table-row" style="padding-top: 20px; margin-bottom: 30px;">
+                            <div class="main-table-row-input-company">
+                                <label for="Account">Account</label>
+                                <input type="text" id="Account">
+                            </div>
+                            <div class="main-table-row-input-company">
+                                <label for="Price">Price</label>
+                                <input type="text" id="Price">
+                            </div>
+                            <div class="main-table-row-input-company">
+                                <label for="Registration fee">Registration fee</label>
+                                <input type="text" id="Registration fee">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+           
+                
+            </div>
+            <div class="footer-bar">
+                <p>Company name & contact</p>
+            </div>
+            
+            
+            
+        </section>
+    </section>
+    <script>
+        function viewDetail () {
+            var button = document.getElementById("Putin_button");
+            var issue_second = document.getElementById("issue_second");
+            if (button.textContent==="Put in") {
+                issue_second.style.display="block";
+                button.textContent="Completed";
+            } else {
+                issue_second.style.display="none";
+                button.textContent="Put in";
+                document.getElementById("issue_first").style.display="none";
+                document.getElementById("issue_second").style.display="block";
+                document.getElementById("issue_third").style.display="block";
+                document.getElementById("issue_button").style.display="block";
+            }
+            
+        }
+
+        function viewDetail_2 () {
+            document.getElementById("issue_sixth").style.display="block";
+            document.getElementById("issue_fourth").style.display="block";
+            document.getElementById("issue_button").style.display="none";
+        }
+
+        function viewDetail_3 () {
+            var button = document.getElementById("Putin_button2");
+            var issue_fifth = document.getElementById("issue_fifth");
+            if (button.textContent==="Put in") {
+                issue_fifth.style.display="block";
+                button.textContent="Completed";
+            } else {
+                button.textContent="Put in";
+                issue_fifth.style.display="none";
+                document.getElementById("issue_sixth").style.display="none";
+                document.getElementById("issue_button").style.display="block";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+

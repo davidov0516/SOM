@@ -92,7 +92,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 24px; 
-    color: #FFFFFF;;
+    color: #FFFFFF;
 } 
 
 .app-aside-bar {
@@ -165,7 +165,16 @@ body {
     font-family: 'Wingdings', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 16px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.menu-small-icon-remove {
+    font-family: 'Webdings', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
     text-align: center;
     color: rgb(255, 255, 255);
 }

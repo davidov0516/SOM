@@ -105,7 +105,7 @@
                 </div>
                 <div class="section-header-content">
                     <div class="section-header-title">
-                        EDIT SHIP
+                        SHIP DETAIL
                     </div>
                     <div class="section-header-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
@@ -115,39 +115,23 @@
             <div class="section-main-content">
                 <div class="section-main-card-group" style="width: 95%;">
                     <div>
-                        <div class="ship-infos" style="margin-bottom: 10px;">
-                            <div class="ship-info-tile" style="margin-left: 0px;">
-                                <div>
-                                    <p class="label"><span>Vessel name</span></p>
-                                    <input type="text" value="CMA CGM TROCADERO" class="input" style="width: 300px;">
-                                </div>
-                            </div>
-                            <div class="ship-info-tile">
-                                <div>
-                                    <p class="label"><span>Registered</span></p>
-                                    <input type="date" value="" style="width: 150px;">
-                                </div>
-                            </div>
-                            <div class="ship-info-tile">
-                                <div>
-                                    <p class="label" style="display: flex;"><input type="checkbox" value="Removed" style="height: 17px;margin: 0px;"> &nbsp;&nbsp;<span>Removed</span> </p>
-                                    
-                                    <input type="date" value="" style="width: 150px;">
-                                </div>
-                            </div>
-                            <button class="section-main-button" style="margin-left: auto;">
+                        <div class="ship-infos" style="margin-bottom: 10px; align-items: center;">
+                            <p class="label" style="font-size: 34px; display: inline; margin-top: 10px; margin-bottom: 10px;"><span><strong>CMA CGM TROCADERO</strong></span></p>
+                            <button class="yellow-button" style="margin-left: auto;">
                                 Save
                             </button>
-                            <button class="section-main-button" style="margin-left: 20px;">
-                                Cancel
-                            </button>
+                        </div>
+                        <div class="ship-infos" style="margin-bottom: 10px; display: block;">
+                            <p>Registerd: 2022/6/10</p>
+                            <p>Certificate: XXX-000001 (to 2023/7/20)</p>
+                            <p>Removed: -</p>
                         </div>
                     </div>
 
-                    <p class="label"><span>Photos</span></p>
+
                     <div class="ship-images">
                         <div class="ship-big-image">
-                            <img style="width: 100%; height:70%; object-fit: cover;" class="img " src="resource/ship_detail/u1113.png">
+                            <img style="width: 100%" class="img " src="resource/ship_detail/u1113.png">
                         </div>
                         &nbsp;
                         <div class="ship-small-images">
@@ -163,75 +147,84 @@
                             <div class="ship-small-image-tile">
                                 <img style="width: 100%" src="resource/ships/photo_thumbnail_u1071.svg">
                             </div>
-                            <div class="ship-small-image-tile">
-                                <img style="width: 100%" src="resource/ship_detail/photo_add_u1108.svg">
-                                <div class="child-center" style="font-size: 32px;">+</div>
-                            </div>
+                            
                         </div>
                     </div>
                     
-                    <div class="section-main-card shadow" style="text-align: left; height: auto !important;">
+                    <div class="main-table" style="margin-left: 0; text-align: left; height: auto !important;">
                         <p class="card-title"><span>VESSEL PARTICULARS</span></p>
-                        <div class="vessel-infos">
-                            <div class="vessel-info-tile" style="flex-basis: 100%;">
-                                <p class="label"><span>Ship type</span></p>
-                                <input type="text" value="Container Ship">
+                        <div class="shpping-detail-table" style="display: flex;">
+                            <div class="main-table-body" style="padding-left: 60px; flex-basis: 45%; ">
+                                <table class="data-table"> 
+                                    <thead>
+                                        <th style="width: 45%;">Item</th>
+                                        <th style="width: 55%;">Value</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd">
+                                            <td>Ship type</td>
+                                            <td>Container Ship</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Year of built</td>
+                                            <td>2021</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Flag</td>
+                                            <td>France</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Homeport</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Reg. Number</td>
+                                            <td>987654321</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>IMO Number</td>
+                                            <td>1241241</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Gross Tonnage (t)</td>
+                                            <td>235000</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Net Tonnage (t)</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Deadweight (t)</td>
+                                            <td>220000</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Length (m)</td>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Beam (m)</td>
+                                            <td>65</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Depth (m)</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td>Draught (m)</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Year of Build</span></p>
-                                <input type="text" value="2021">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Flag</span></p>
-                                <input type="text" value="France">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Homeport</span></p>
-                                <input type="text" value="">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Reg. Number</span></p>
-                                <input type="text" value="987654321">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Callsign</span></p>
-                                <input type="text" value="FMOL">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>IMO Number</span></p>
-                                <input type="text" value="987654321">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Gross Tonnage (t))span></p>
-                                <input type="text" value="236583">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Net Tonnage (t)</span></p>
-                                <input type="text" value="">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Deadweight</span></p>
-                                <input type="text" value="220666">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Length (m)</span></p>
-                                <input type="text" value="400">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Beam (m)</span></p>
-                                <input type="text" value="61">
-                            </div>
-                            <div class="vessel-info-tile">
-                                <p class="label"><span>Depth</span></p>
-                                <input type="text" value="9839167">
-                            </div>
-                            <div class="vessel-info-tile" style="flex-basis: 100%;">
-                                <p class="label"><span>Draugth (m)</span></p>
-                                <input type="text" value="236583">
-                            </div>
-                            <div class="vessel-info-tile" style="flex-basis: 100%;">
-                                <p class="label"><span>Note</span></p>
-                                <textarea style="color: rgb(153, 153, 153); width: 100%; height: 180px;"></textarea>
+                            <div style="flex-basis: 45% ; position: relative;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet 
+                                    lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. 
+                                    Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                    Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci,
+                                     sed rhoncus pronin sapien nunc accuan eget.
+                                </p>
+                                <img src="./resource/ship_detail/u1151.png" style="position:absolute; bottom: 0; width: 300px; right: 0; opacity: 0.3; margin-top: auto;">
                             </div>
                         </div>
                     </div>

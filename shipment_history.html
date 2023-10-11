@@ -9,7 +9,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Shipping</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/shipping.css" />
     <link rel="stylesheet" type="text/css" href="css/color.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
 </head>
@@ -46,13 +45,13 @@
             </div>
             <div class="app-aside-bar-pane">
                 <h2 class="app-aside-bar-header">SHIPPING</h2>
-                <a class="no-underline" href="./index.html">
-                    <button class="app-aside-bar-button" onclick="onShippingClicked()">
+                <a class="no-underline" href="./shipping.html">
+                    <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Shipping
                     </button>
                 </a>
-                <a class="no-underline" href="./waterareas.html">
+                <a class="no-underline" href="./water_areas.html">
                     <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Water areas
@@ -74,7 +73,7 @@
             
             <div class="app-aside-bar-pane">
                 <h2 class="app-aside-bar-header">SETTING</h2>
-                <a class="no-underline" href="./ship.html">
+                <a class="no-underline" href="./ships.html">
                     <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Ship
@@ -99,7 +98,7 @@
         <section class="section">
             <div class="section-header">
                 <div class="section-box-small shadow">
-                    <span></span>
+                    <span></span>
                 </div>
                 <div class="section-header-content">
                     <div class="section-header-title">
@@ -113,8 +112,7 @@
             </div>
             <div class="main-table">
                 <div class="main-table-row">
-                    <p>SHIPMENTS</p>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <p class="plus-button">+</p>
+                    <p>SHIPMENTS</p>
                 </div>
                 <div class="main-table-row">
                     <div class="main-table-row-input-company">
@@ -123,16 +121,17 @@
                     </div>
                     <div class="main-table-row-input-company">
                         <label for="Ship">Ship</label>
-                        <select style="width: 200px;"></select>
+                        <select style="width: 180px;"></select>
                     </div>
                     <div class="main-table-row-input-company">
-                        <div style="display: inline;">
-                            <label for="Period">Period</label>
-                            <input type="text" id="Period">
-                        </div>
-
-                        
-                        
+                        <label for="Period">Period</label>
+                        <input type="date" id="Period">
+                    </div>
+                    <div class="main-table-row-input-company" style="margin-top: 30px;">
+                        <label>-</label>
+                    </div>
+                    <div class="main-table-row-input-company" style="margin-top: auto;">
+                        <input type="date" id="BL">
                     </div>
                     <div class="main-table-row-input-company">
                         <label for="BL">BL</label>
@@ -145,16 +144,16 @@
                     
                     
                 </div>
-                <div class="main-table-row">
+                <div class="main-table-row" style="padding-top: 10px;">
                     <div class="main-table-row-input-entries">
-                        <label>Show</label>
-                        <select style="display: inline;">
+                        <label style="padding-top: 3px;">Show</label>
+                        <select style="margin-left: 10px; height: 28px; width: 60px;">
                             <option selected>10</option>
                             <option>30</option>
                             <option>50</option>
                             <option>100</option>
                         </select>
-                        <label>entries</label>
+                        <label style="margin-left: 10px; padding-top: 3px;">entries</label>
                     </div>
                 </div>
                 

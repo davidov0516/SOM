@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -9,23 +8,49 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Shipping</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/shipping.css" />
     <link rel="stylesheet" type="text/css" href="css/color.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
 </head>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const activeButton = document.querySelector('#MainButton');
+        activeButton.classList.add('active');
+        document.getElementById("Ship").style.display = "block";
+    });
+</script>
 
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-title" style="font-size: 26px;">
+                TYPE OF CERTIFICATE
+            </div>
+            <div class="modal-input-area" style="height: 80%;">
+                <span> Name </span>
+                <input style=" width: 100%;height: 30%; margin-top: 10px;margin-bottom: 20px;">
+                <span> Issuing Agency </span>
+                <input style=" width: 100%;height: 30%; margin-top: 10px;">
+                <span style="margin-top: 30px;"> Note </span>
+                <input style=" width: 100%;height: 50%; margin-top: 10px;">
+                <div class="display:flex;" style="margin-top: 30px;width: 100%; height:20%;margin-left: 70px;">
+                    <button class="blue-button" >OK</button>
+                    <button class="blue-button">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="app-header bg-dark">
         <div class="app-header-logo">
             <img class="app-header-logo-image" src="./resource/main/u36.svg">
             <div class="app-header-logo-title"> Business Name </div>
         </div>
         <div class="app-header-right-menu">
-            <div class="app-header-alarm" >
+            <div class="app-header-alarm">
                 <img class="app-header-alarm-image" src="./resource/main/u30.svg">
             </div>
             <img class="app-header-right-divider" src="./resource/main/u27.svg">
-            <div class="app-header-user-info">  
+            <div class="app-header-user-info">
                 <img class="app-header-avatar" src="../resource/main/u25.svg">
                 <div class="app-header-user-name">
                     User name
@@ -46,13 +71,13 @@
             </div>
             <div class="app-aside-bar-pane">
                 <h2 class="app-aside-bar-header">SHIPPING</h2>
-                <a class="no-underline" href="./index.html">
-                    <button class="app-aside-bar-button" onclick="onShippingClicked()">
+                <a class="no-underline" href="./shipping.html">
+                    <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Shipping
                     </button>
                 </a>
-                <a class="no-underline" href="./waterareas.html">
+                <a class="no-underline" href="./water_areas.html">
                     <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Water areas
@@ -71,10 +96,10 @@
                     </button>
                 </a>
             </div>
-            
+
             <div class="app-aside-bar-pane">
                 <h2 class="app-aside-bar-header">SETTING</h2>
-                <a class="no-underline" href="./ship.html">
+                <a class="no-underline" href="./ships.html">
                     <button class="app-aside-bar-button">
                         <span class=" menu-icon"></span>
                         Ship
@@ -95,11 +120,11 @@
 
 
             </div>
-        </aside> 
+        </aside>
         <section class="section">
             <div class="section-header">
                 <div class="section-box-small shadow">
-                    <span></span>
+                    <span></span>
                 </div>
                 <div class="section-header-content">
                     <div class="section-header-title">
@@ -111,212 +136,246 @@
                     </div>
                 </div>
             </div>
-            <div class="button-tab">
-                <button class="blue-button" name="ship">Ship</button>
-                <button class="blue-button" name="personal">Personal</button>
+            <div class="tab" style="margin-left: 40px;">
+                <button class="tablinks" id="MainButton" onclick="openTab(event, 'Ship')">Ship</button>
+                <button class="tablinks" onclick="openTab(event, 'Personal')">Personal</button>
             </div>
 
-            <!-- ship tab -->
-            <div class="main-table">
+            <div id="Ship" class="tabcontent">
+                <!-- ship tab -->
+                <div class="main-table">
 
-                <div class="main-table-row">
-                    <p>SHIP CERTIFICATES</p>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <p class="plus-button">+</p>
-                </div>
-                
-                <div class="main-table-body">
-                    <table class="data-table"> 
-                        <thead>
-                            <th style="width: 25%;">Name</th>
-                            <th style="width: 30%;">Issuing agency</th>
-                            <th style="width: 45%;">Note</th>
+                    <div class="main-table-row">
+                        <p>SHIP CERTIFICATES</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="plus-button" id="myBtn">+</p>
+                    </div>
 
-                        </thead>
-                        <tbody>
-                            <tr class="odd">
-                                <td><a href="#">Certificate name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr>
-                            <tr class="odd">
-                                <td><a href="#">Certificate name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr>
-                            <tr class="odd">
-                                <td><a href="#">Certificate name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr><tr class="odd">
-                                <td><a href="#">Certificate name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr>
+                    <div class="main-table-body">
+                        <table class="data-table">
+                            <thead>
+                                <th style="width: 25%;">Name</th>
+                                <th style="width: 30%;">Issuing agency</th>
+                                <th style="width: 45%;">Note</th>
 
-                        </tbody>
-                    </table>
-                </div>
-                <div class="main-table-row">
-                    <div class="main-table-row-pagination">
-                        <a href="#">Previous</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">Next</a>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td><a href="#">Certificate name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><a href="#">Certificate name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><a href="#">Certificate name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><a href="#">Certificate name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="main-table-row">
+                        <div class="main-table-row-pagination">
+                            <a href="#">Previous</a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">Next</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- personal tab -->
-            <div class="main-table">
-                <div class="main-table-row">
-                    <p>PERSONAL ID CARDS</p>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <p class="plus-button">+</p>
-                </div>
-                
-                <div class="main-table-body">
-                    <table class="data-table"> 
-                        <thead>
-                            <th style="width: 25%;">Name</th>
-                            <th style="width: 30%;">Issuing agency</th>
-                            <th style="width: 45%;">Note</th>
+            <div id="Personal" class="tabcontent">
+                <!-- personal tab -->
+                <div class="main-table">
+                    <div class="main-table-row">
+                        <p>PERSONAL ID CARDS</p>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="plus-button" onclick="showModal()">+</p>
+                    </div>
 
-                        </thead>
-                        <tbody>
-                            <tr class="odd">
-                                <td><a href="#">ID card name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr>
-                            <tr class="odd">
-                                <td><a href="#">ID card name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr>
-                            <tr class="odd">
-                                <td><a href="#">ID card name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr><tr class="odd">
-                                <td><a href="#">ID card name 01</a></td>
-                                <td>Agency name 01</td>
-                                <td>
-                                    <div class="table-button-group">
-                                        <div style="display: inline;">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </div>
-                                        <div style="margin-left: auto;">
-                                            <span class="cell-edit-remove">
-                                                <img src="./resource/water_areas/water-area-remove-button.png" alt="edit button">
-                                            </span>
-                                        </div>
-                                    </div>                                                                       
-                                </td>
-                            </tr>
+                    <div class="main-table-body">
+                        <table class="data-table">
+                            <thead>
+                                <th style="width: 25%;">Name</th>
+                                <th style="width: 30%;">Issuing agency</th>
+                                <th style="width: 45%;">Note</th>
 
-                        </tbody>
-                    </table>
-                </div>
-                <div class="main-table-row">
-                    <div class="main-table-row-pagination">
-                        <a href="#">Previous</a>
-                        <a href="#">1</a>
-                        <a href="#" class="active">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">Next</a>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td><a href="#">ID card name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><a href="#">ID card name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><a href="#">ID card name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="odd">
+                                    <td><a href="#">ID card name 01</a></td>
+                                    <td>Agency name 01</td>
+                                    <td>
+                                        <div class="table-button-group">
+                                            <div style="display: inline;">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            </div>
+                                            <div style="margin-left: auto;">
+                                                <button class="section-main-content-small-button menu-small-icon" onclick="showModal()" style="margin-left: 10px; margin-right: 10px; float: right;">!</button>
+
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="main-table-row">
+                        <div class="main-table-row-pagination">
+                            <a href="#">Previous</a>
+                            <a href="#">1</a>
+                            <a href="#" class="active">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">Next</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bar">
                 <p>Company name & contact</p>
             </div>
-            
-            
-            
+            <script>
+                function openTab(evt, cityName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(cityName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+                // Get the modal
+                var modal = document.getElementById("myModal");
+
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                btn.addEventListener('click', showModal);
+                // When the user clicks the button, open the modal 
+                function showModal() {
+                    modal.style.display = "block";
+                }
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
         </section>
     </section>
 </body>
